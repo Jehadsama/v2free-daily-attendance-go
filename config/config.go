@@ -7,8 +7,7 @@ import (
 	"github.com/joho/godotenv"
 )
 
-// Init is an exported function
-func Init() {
+func init() {
 	dirname, _ := os.Getwd()
 	env := os.Getenv("V2FREE_ENV")
 	if env == "" {
